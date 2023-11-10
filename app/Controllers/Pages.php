@@ -103,4 +103,10 @@ class Pages extends BaseController
         $data = $this->modelstatus->orderBy('id', 'DESC')->first(['kondisi']);
         return $this->response->setJSON($data);
     }
+
+    public function get()
+    {
+        $data = $this->modelstatus->orderBy('id', 'DESC')->first(['kondisi']);
+        return $this->response->setJSON($data);
+    }
 }
